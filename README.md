@@ -6,4 +6,5 @@ Type in a US zip to get current weather information limited to:
   3. weather conditions: cloudy, rain, clear sky, etc.
 
 Used a weather api from openweathermap.org to get the current weather of a city in the United States of America
+
 Used colors for the background to signify the time of day sunrise, sunset, day and night.
