@@ -1,0 +1,34 @@
+body{
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+}
+#main, .section{
+    padding: 5px;
+}
+.section{
+    position: absolute;
+    width: 25%;
+}
+#main{
+    background-color: #f0f8ff;
+    text-align: center;
+    display: inline-block;
+    width: 80%;
+    height: 300px;
+    position: relative;
+    margin-top: 5px;
+}
+#side_a{
+    right: 70%;
+}
+#info{
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+#side_b{
+    left: 70%;
+}
