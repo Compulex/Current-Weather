@@ -64,25 +64,36 @@
                 var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
                 var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
                 var dStr = days[now.getDay()] + " " + months[now.getMonth()] + " " + now.getDate() + " " + now.getFullYear();
-                document.getElementById("time").innerHTML = dStr + "   " + now.toLocaleTimeString();
+                var timeStr = document.getElementById("time");
+                timeStr.innerHTML = dStr + "   " + now.toLocaleTimeString();
+                var h1 = document.getElementsByTagName("h1")[0];
 
                 //greeting
                 var greet = document.getElementById("greeting");
                 if(now.getHours() < 4){
                     greet.innerHTML = "Good Early Morning";
                     document.body.style.backgroundColor = "#27214e";
+                    h1.style.color = "white";
+                    timeStr.style.color = "white";
                 }
                 else if(now.getHours() >= 4 && now.getHours() < 12){
                     greet.innerHTML = "Good Morning";
                     document.body.style.backgroundColor = "#00bfff";
+                    h1.style.color = "black";
+                    timeStr.style.color = "black";
                 }
                 else if(now.getHours() >= 12 && now.getHours() < 17){
                     greet.innerHTML = "Good Afternoon";
                     document.body.style.backgroundColor = "#00bfff";
+                    h1.style.color = "black";
+                    timeStr.style.color = "black";
+                    
                 }
                 else if(now.getHours() >= 17){
                     greet.innerHTML = "Good Evening";
                     document.body.style.backgroundColor = "#27214e";
+                    h1.style.color = "white";
+                    timeStr.style.color = "white";
                 }
                 //ongoing time
                 runTime();
